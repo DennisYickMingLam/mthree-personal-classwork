@@ -1,0 +1,14 @@
+C:\Users\jtriolo\source\repos\C#Bootcamp\3.IntermediateConcepts\IntermediateConcepts\IntermediateConcepts\bin\Debug\IntermediateConcepts.exe.config
+C:\Users\jtriolo\source\repos\C#Bootcamp\3.IntermediateConcepts\IntermediateConcepts\IntermediateConcepts\bin\Debug\IntermediateConcepts.exe
+C:\Users\jtriolo\source\repos\C#Bootcamp\3.IntermediateConcepts\IntermediateConcepts\IntermediateConcepts\bin\Debug\IntermediateConcepts.pdb
+C:\Users\jtriolo\source\repos\C#Bootcamp\3.IntermediateConcepts\IntermediateConcepts\IntermediateConcepts\obj\Debug\IntermediateConcepts.csproj.AssemblyReference.cache
+C:\Users\jtriolo\source\repos\C#Bootcamp\3.IntermediateConcepts\IntermediateConcepts\IntermediateConcepts\obj\Debug\IntermediateConcepts.csproj.CoreCompileInputs.cache
+C:\Users\jtriolo\source\repos\C#Bootcamp\3.IntermediateConcepts\IntermediateConcepts\IntermediateConcepts\obj\Debug\IntermediateConcepts.exe
+C:\Users\jtriolo\source\repos\C#Bootcamp\3.IntermediateConcepts\IntermediateConcepts\IntermediateConcepts\obj\Debug\IntermediateConcepts.pdb
+\\DENNIS-PC\Mthree\IntermediateConcepts\IntermediateConcepts\bin\Debug\IntermediateConcepts.exe.config
+\\DENNIS-PC\Mthree\IntermediateConcepts\IntermediateConcepts\bin\Debug\IntermediateConcepts.exe
+\\DENNIS-PC\Mthree\IntermediateConcepts\IntermediateConcepts\bin\Debug\IntermediateConcepts.pdb
+\\DENNIS-PC\Mthree\IntermediateConcepts\IntermediateConcepts\obj\Debug\IntermediateConcepts.csproj.AssemblyReference.cache
+\\DENNIS-PC\Mthree\IntermediateConcepts\IntermediateConcepts\obj\Debug\IntermediateConcepts.csproj.CoreCompileInputs.cache
+\\DENNIS-PC\Mthree\IntermediateConcepts\IntermediateConcepts\obj\Debug\IntermediateConcepts.exe
+\\DENNIS-PC\Mthree\IntermediateConcepts\IntermediateConcepts\obj\Debug\IntermediateConcepts.pdb

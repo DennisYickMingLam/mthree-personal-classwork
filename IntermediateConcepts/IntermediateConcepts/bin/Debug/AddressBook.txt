@@ -1,0 +1,4 @@
+FirstName,LastName,Street1,Street2,City,State,Zip
+Joe,Somebody,123 Main Street,,Akron,OH,44311
+Mary,Person,250 Maple Ave,Apt 305,Toledo,OH,43449
+Jack,Daniels,133 Lynchburg Highway,,Lynchburg,TN,37352

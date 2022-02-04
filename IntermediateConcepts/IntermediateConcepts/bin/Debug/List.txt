@@ -1,0 +1,2 @@
+HelloWhen we use the Streamwriter with the File.AppendText,
+the text is not overwritten but added to the end.
