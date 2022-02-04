@@ -1,0 +1,7 @@
+C:\Users\jtriolo\source\repos\C#Bootcamp\4.AdvancedConcepts\AdvancedConcepts\AdvancedConcepts\bin\Debug\AdvancedConcepts.exe.config
+C:\Users\jtriolo\source\repos\C#Bootcamp\4.AdvancedConcepts\AdvancedConcepts\AdvancedConcepts\bin\Debug\AdvancedConcepts.exe
+C:\Users\jtriolo\source\repos\C#Bootcamp\4.AdvancedConcepts\AdvancedConcepts\AdvancedConcepts\bin\Debug\AdvancedConcepts.pdb
+C:\Users\jtriolo\source\repos\C#Bootcamp\4.AdvancedConcepts\AdvancedConcepts\AdvancedConcepts\obj\Debug\AdvancedConcepts.csproj.AssemblyReference.cache
+C:\Users\jtriolo\source\repos\C#Bootcamp\4.AdvancedConcepts\AdvancedConcepts\AdvancedConcepts\obj\Debug\AdvancedConcepts.csproj.CoreCompileInputs.cache
+C:\Users\jtriolo\source\repos\C#Bootcamp\4.AdvancedConcepts\AdvancedConcepts\AdvancedConcepts\obj\Debug\AdvancedConcepts.exe
+C:\Users\jtriolo\source\repos\C#Bootcamp\4.AdvancedConcepts\AdvancedConcepts\AdvancedConcepts\obj\Debug\AdvancedConcepts.pdb
