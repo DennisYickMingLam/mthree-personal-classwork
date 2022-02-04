@@ -1,0 +1,7 @@
+C:\Users\jtriolo\source\repos\C#Bootcamp\1.LanguageFundamentals\OverridingEquals\OverridingEquals\bin\Debug\OverridingEquals.exe.config
+C:\Users\jtriolo\source\repos\C#Bootcamp\1.LanguageFundamentals\OverridingEquals\OverridingEquals\bin\Debug\OverridingEquals.exe
+C:\Users\jtriolo\source\repos\C#Bootcamp\1.LanguageFundamentals\OverridingEquals\OverridingEquals\bin\Debug\OverridingEquals.pdb
+C:\Users\jtriolo\source\repos\C#Bootcamp\1.LanguageFundamentals\OverridingEquals\OverridingEquals\obj\Debug\OverridingEquals.csproj.AssemblyReference.cache
+C:\Users\jtriolo\source\repos\C#Bootcamp\1.LanguageFundamentals\OverridingEquals\OverridingEquals\obj\Debug\OverridingEquals.csproj.CoreCompileInputs.cache
+C:\Users\jtriolo\source\repos\C#Bootcamp\1.LanguageFundamentals\OverridingEquals\OverridingEquals\obj\Debug\OverridingEquals.exe
+C:\Users\jtriolo\source\repos\C#Bootcamp\1.LanguageFundamentals\OverridingEquals\OverridingEquals\obj\Debug\OverridingEquals.pdb

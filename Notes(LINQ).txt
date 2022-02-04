@@ -1,0 +1,79 @@
+
+Exercise10: sum? or any one order?
+
+Exercise13: it is very hard to check if the output is correct.
+
+Exercise14:	>= 6 has no numbers in it
+
+Exercise16: clarify?
+
+Exercise20: it is very hard to check if the output is correct.
+
+Exercise21: clarify example sum?
+var customers = DataLoader.LoadCustomers();
+            var cusOrder = (
+                from customer in customers
+                select new {
+                    customer.CustomerID,
+                    orderYear = (
+                        from order in customer.Orders
+                        group order by order.OrderDate.Year into oYear
+                        select new {
+                            Year = oYear.Key,
+                            orderMonths = (
+                                from o in oYear
+                                group o by o.OrderDate.Month into oMonth
+                                select new {
+                                    Month = oMonth,
+                                    MonthKey = oMonth.Key
+                                }
+                            )
+                        }
+                    )
+                }
+            );
+
+            foreach (var c in cusOrder) {
+                Console.WriteLine(c.CustomerID);
+                foreach (var y in c.orderYear) {
+                    Console.WriteLine("\t{0}", y.Year);
+                    foreach (var m in y.orderMonths) {
+                        foreach (var t in m.Month) {
+                            Console.WriteLine("\t\t{0} - {1}", m.MonthKey, t.Total);
+                        }
+                        
+                    }
+                }
+            }
+		
+Exercise25: Need more understanding
+
+Exercise28:
+List<Product> products = DataLoader.LoadProducts();
+            var disCat = (
+                from product in products
+                group product by product.Category into cat
+                select new {
+                    catName = cat.Key,
+                    proCount = cat.Count()
+                }
+            );
+
+            Console.WriteLine("Category Name\tProduct Count");
+            Console.WriteLine("==============================================================================");
+            foreach (var d in disCat) {
+                Console.WriteLine("{0} \t{1}", d.catName, d.proCount);
+            }
+			
+ List<Product> products = DataLoader.LoadProducts();
+            var disCat = (
+                from product in products
+                select new {
+                    proName = product.Category,
+                    proCount = product.Category.Count()
+                }
+            ).Distinct();
+            Console.WriteLine("Product Name\tProduct Count");
+            foreach (var d in disCat) {
+                Console.WriteLine("{0} \t{1}",d.proName,d.proCount);
+            }

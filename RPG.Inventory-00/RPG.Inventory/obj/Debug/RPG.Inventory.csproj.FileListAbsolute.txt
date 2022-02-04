@@ -1,0 +1,12 @@
+C:\Users\kweiss\source\repos\RPGInventory\RPG.Inventory\obj\Debug\RPG.Inventory.csproj.CoreCompileInputs.cache
+C:\Users\kweiss\source\repos\RPGInventory\RPG.Inventory\bin\Debug\RPG.Inventory.dll
+C:\Users\kweiss\source\repos\RPGInventory\RPG.Inventory\bin\Debug\RPG.Inventory.pdb
+C:\Users\kweiss\source\repos\RPGInventory\RPG.Inventory\obj\Debug\RPG.Inventory.dll
+C:\Users\kweiss\source\repos\RPGInventory\RPG.Inventory\obj\Debug\RPG.Inventory.pdb
+C:\Users\kweiss\source\repos\RPGInventory\RPG.Inventory\obj\Debug\RPG.Inventory.csproj.AssemblyReference.cache
+\\DENNIS-PC\Mthree\RPG.Inventory-00\RPG.Inventory\bin\Debug\RPG.Inventory.dll
+\\DENNIS-PC\Mthree\RPG.Inventory-00\RPG.Inventory\bin\Debug\RPG.Inventory.pdb
+\\DENNIS-PC\Mthree\RPG.Inventory-00\RPG.Inventory\obj\Debug\RPG.Inventory.csproj.AssemblyReference.cache
+\\DENNIS-PC\Mthree\RPG.Inventory-00\RPG.Inventory\obj\Debug\RPG.Inventory.csproj.CoreCompileInputs.cache
+\\DENNIS-PC\Mthree\RPG.Inventory-00\RPG.Inventory\obj\Debug\RPG.Inventory.dll
+\\DENNIS-PC\Mthree\RPG.Inventory-00\RPG.Inventory\obj\Debug\RPG.Inventory.pdb
