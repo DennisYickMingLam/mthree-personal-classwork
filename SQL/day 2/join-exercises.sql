@@ -59,42 +59,77 @@ where Client.LastName like'C%'
 -- This is a many-to-many relationship with a bridge table.
 -- Use aliases appropriately to avoid ambiguous columns in the result.
 --------------------
+select Workout.Name as Workout_Name, Goal.Name as Goal_Name
+from Workout
+INNER JOIN WorkoutGoal ON Workout.WorkoutId = WorkoutGoal.WorkoutId
+INNER JOIN Goal ON WorkoutGoal.GoalId = Goal.GoalId
 
 -- Select FirstName and LastName from Client.
 -- Select ClientId and EmailAddress from Login.
 -- Join the tables, but make Login optional.
 -- 500 rows
 --------------------
+select Client.FirstName, Client.LastName, Login.ClientId, Login.EmailAddress
+from Client
+LEFT OUTER join Login on Client.ClientId = Login.ClientId
 
 -- Using the query above as a foundation, select Clients
 -- who do _not_ have a Login.
 -- 200 rows
 --------------------
+select Client.FirstName, Client.LastName, Login.ClientId, Login.EmailAddress
+from Client
+left OUTER join Login on Client.ClientId = Login.ClientId
+where login.EmailAddress is null
 
 -- Does the Client, Romeo Seaward, have a Login?
 -- Decide using a single query.
 -- nope :(
 --------------------
+select Client.FirstName + ' ' + Client.LastName as Client_Name, login.EmailAddress
+from Client
+left join login on Client.ClientId = Login.ClientId
+where	Client.FirstName = 'Romeo' AND
+		Client.LastName = 'Seaward'
 
 -- Select ExerciseCategory.Name and its parent ExerciseCategory's Name.
 -- This requires a self-join.
 -- 12 rows
 --------------------
+select child.Name as child, parent.Name as parent
+from ExerciseCategory parent
+inner join ExerciseCategory child on parent.ParentCategoryId = child.ExerciseCategoryId
     
 -- Rewrite the query above so that every ExerciseCategory.Name is
 -- included, even if it doesn't have a parent.
 -- 16 rows
 --------------------
-    
+select child.Name as child, parent.Name as parent
+from ExerciseCategory parent
+right join ExerciseCategory child on parent.ParentCategoryId = child.ExerciseCategoryId  
+
 -- Are there Clients who are not signed up for a Workout?
 -- 50 rows
 --------------------
+select Client.FirstName, Client.LastName
+from Client
+left join ClientWorkout on ClientWorkout.ClientId = Client.ClientId
+where ClientWorkout.ClientId is null
 
 -- Which Beginner-Level Workouts satisfy at least one of Shell Creane's Goals?
 -- Goals are associated to Clients through ClientGoal.
 -- Goals are associated to Workouts through WorkoutGoal.
 -- 6 rows, 4 unique rows
 --------------------
+select Workout.Name
+from Client
+inner join ClientGoal on Client.ClientId = ClientGoal.ClientId
+inner join Goal on Goal.GoalId = ClientGoal.GoalId
+inner join WorkoutGoal on Goal.GoalId = WorkoutGoal.GoalId
+inner join Workout on WorkoutGoal.WorkoutId = Workout.WorkoutId
+inner join Level on Level.LevelId = Workout.LevelId
+where Client.FirstName = 'Shell' and Client.LastName = 'Creane'
+and level.name = 'Beginner'
 
 -- Select all Workouts. 
 -- Join to the Goal, 'Core Strength', but make it optional.
@@ -103,6 +138,11 @@ where Client.LastName like'C%'
 -- Why?
 -- 26 Workouts, 3 Goals
 --------------------
+select Workout.Name
+from Workout
+inner join WorkoutGoal on Workout.WorkoutId = WorkoutGoal.WorkoutId
+inner join Goal  on WorkoutGoal.GoalId = Goal.GoalId
+group by Workout.Name
 
 -- The relationship between Workouts and Exercises is... complicated.
 -- Workout links to WorkoutDay (one day in a Workout routine)
@@ -114,6 +154,12 @@ where Client.LastName like'C%'
 -- which finally links to Exercise.
 -- Select Workout.Name and Exercise.Name for related Workouts and Exercises.
 --------------------
+select workout.Name as workout_name, Exercise.Name as exercise_name
+from workout
+inner join WorkoutDay on WorkoutDay.WorkoutId = workout.WorkoutId
+inner join WorkoutDayExerciseInstance on WorkoutDay.WorkoutDayId = WorkoutDayExerciseInstance.WorkoutDayId
+inner join ExerciseInstance on ExerciseInstance.ExerciseInstanceId = WorkoutDayExerciseInstance.ExerciseInstanceId
+inner join Exercise on Exercise.ExerciseId = ExerciseInstance.ExerciseId;
    
 -- An ExerciseInstance is configured with ExerciseInstanceUnitValue.
 -- It contains a Value and UnitId that links to Unit.
@@ -124,3 +170,9 @@ where Client.LastName like'C%'
 -- are the configured Values?
 -- 4 rows, 1 Unit, and 4 distinct Values
 --------------------
+Select Exercise.Name as Exercise_Name, ExerciseInstanceUnitValue.Value as ExerciseInstanceUnitValue_Value, Unit.Name as Unit_Name
+from unit
+inner join ExerciseInstanceUnitValue on ExerciseInstanceUnitValue.UnitId = Unit.UnitId
+inner join ExerciseInstance on ExerciseInstance.ExerciseInstanceId = ExerciseInstanceUnitValue.ExerciseInstanceId
+inner join Exercise on Exercise.ExerciseId = ExerciseInstance.ExerciseId
+where Exercise.Name = 'Plank'
